@@ -1,59 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <title>Mahtab's Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://kit.fontawesome.com/03ffe29f8b.js" crossorigin="anonymous"></script>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VLNF64TM34"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-VLNF64TM34');
+</script>
 </head>
+
 <body>
-
-    <!---------------------------------header section---------------------------!-->
-
-
-    <div id="header">
-    <div class="container">    
-        <nav>
-           <img height="70px" width="200px" src="images/logo.jpeg" class="logo">
-           <img src="" class="logo1">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header-text">
-            
-            <p>Software and Web developer</p>
-            <h1>Hello,myself Mahtab Ullah <span style="color:yellow">Sani.</span></h1>
-            <p>studying at AIUB</p>
-        </div>
-    </div>
-</div>
-
-<!-----------about me section----------------!-->
-
-<div id="about">
+  <div id="header">
     <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                    
-                    <img height="520px" width="370px" src="images/mypic.jpg" alt="mypic">
-            </div>
-            <div class="about-col-2">
-                <h1 class="subtitle">About Me</h1>                  
-                    I am a CSE student with expertise in programming languages such as Java, PHP, HTML, CSS, JavaScript, C#, C++, and ASP.NET. I am passionate about coding and enjoy working on challenging projects. I value collaboration and communication, and strive to create a positive work environment. I am committed to staying up-to-date with industry trends and delivering high-quality software and web solutions.</p>
-                <div class="tab-titles">
-                    <p class="tab-links">Skills</p>
-                    <p class="tab-links">Education</p>
-                    <p class="tab-links">Experience</p>
-                </div>
-            </div>
+      <nav>
+        <img src="images/logo3.png" class="logo" alt="logo" />
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Software & Web Developer</p>
+        <h1>
+          Hi, myself <span>Mahtab </span>Ullah Sani </h1>
+          <p>Studying at American International University-Bangladesh</p>
+      </div>
+    </div>
+  </div>
+  <!-- * about -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img height="600px" width="330px" src="images/mypic.jpg" alt="user" />
         </div>
-    </div>   
-</div>
+        <div class="about-col-2">
+          <h2 class="sub-title">About Me</h2>
+          <p>
+            I am a CSE student with expertise in programming languages such as Java, PHP, HTML, CSS, JavaScript, C#, C++, and ASP.NET. I am passionate about coding and enjoy working on challenging projects. I value collaboration and communication, and strive to create a positive work environment. I am committed to staying up-to-date with industry trends and delivering high-quality software and web solutions.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')"">Experience</p>
+              <p class=" tab-links" onclick="opentab('education')"">Education</p>
+            </div>
+            <div class=" tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br />Designing Web/App Interface</li>
+              <li><span>Web Development</span><br />Web app Development</li>
+              <li>
+                <span>App Development</span><br />Building Android/iOS apps
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>
+                <span>Current</span><br />As a student, I don't have formal work experience yet, but I've developed transferable skills through my studies. I'm eager to apply these skills to a professional environment and contribute to the success of the organization. Additionally, I've gained experience through volunteer work and internships, which I believe have prepared me for a professional role
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>
+                <span>Current</span><br />BSc. from American International University-Bangladesh
+              </li>
+              <li>
+                <span>2020</span> <br />
+                HSC from Abdul Kadir Mollah City College ,Narsingdi
+              </li>
+              <li>
+                <span>2018</span><br />SSC from NKM High School & Homes, Narsingdi
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- * services -->
+  <div id="services">
+    <div class="container">
+      <h2 class="sub-title">My Services</h2>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-crop"></i>
+          <h2>UI/UX Design</h2>
+          <p>
+            UI/UX Design is the process of creating a product that provides meaningful and relevant user experiences. It is a process of designing products in a way that it provides meaningful and relevant experiences to users.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Development</h2>
+          <p>
+            Web Development is the process of creating a website for the internet. It is a process of creating a website for the internet.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-mobile-screen"></i>
+          <h2>App Development</h2>
+          <p>
+            App Development is the process of creating a mobile application for smartphones and tablets. It is a process of creating a mobile application for smartphones and tablets.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- -------------------portfolio------------------- -->
+  <div id="portfolio">
+    <div class="container">
+      <h2 class="sub-title">My Work</h2>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/ux.png" alt="UX">
+          <div class="layer">
+            <h3>
+              Social Media UI
+            </h3>
+            <p>
+              The app is designed for social media users. It is a simple and easy to use app.
+            </p>
+            <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/web.png" alt="Web">
+          <div class="layer">
+            <h3>
+              Social Media Website
+            </h3>
+            <p>
+              The app is designed for social media users. It is a simple and easy to use app.
+            </p>
+            <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/app.png" alt="App">
+          <div class="layer">
+            <h3>
+              Social Media App
+            </h3>
+            <p>
+              The app is designed for social media users. It is a simple and easy to use app.
+            </p>
+            <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+  <!-- -------------------contact------------------- -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h2 class="sub-title">
+            Contact Me
+          </h2>
+          <p> <i class="fa-solid fa-envelope"></i>mahtab.sani12381@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +880 1783873816</p>
+          <p><i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/MahtAbSani.065"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/sani_mahtab"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://instagram.com/mahtab.sani123"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/mahtab-ullah-sani-80989b176/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Mahtab12381"><i class="fa-brands fa-github"></i></a>
+          </div>
+          
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="E-Mail" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Send</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+      <div class="copyright">
+        <p>Copyright © MahtabSani. Thank you for visiting <i class="fas fa-heart"></i></p>
+      </div>
+    </div>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
